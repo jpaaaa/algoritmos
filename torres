@@ -1,0 +1,7 @@
+def torres(n, o, d, a):
+    if n == 1:
+        print(f"Mover disco 1 de {o} a {d}")
+    else:
+        torres(n-1, o, a, d)
+        print(f"Mover disco {n} de {origen} a {destino}")
+        torres(n-1, a, d, o)
